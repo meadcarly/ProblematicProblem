@@ -129,7 +129,7 @@ Console.WriteLine();
             Console.WriteLine();
             int randomNumber = _rng.Next(_activities.Count);
             string randomActivity = _activities[randomNumber];
-            if (userAge > 21 && randomActivity == "Wine Tasting")
+            if (userAge < 21 && randomActivity == "Wine Tasting")
             {
                 Console.WriteLine($"Oh no! Looks like you are too young to do {randomActivity}");
                 Console.WriteLine("Pick something else!");
